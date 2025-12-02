@@ -1,0 +1,202 @@
+/* Definições globais e reset */
+body{
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7; /* Cinza muito claro, quase branco */
+    color: #333; /* Texto principal em cinza escuro */
+
+}
+
+header{
+
+    background-color: #111111; /* Preto escuro para o cabeçalho */
+    color: white; /* Texto do cabeçalho em branco */
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+
+h1{
+
+    font-size: 1.8em;
+
+}
+
+button{
+
+    background-color: black;
+    color: white;
+
+}
+
+.container{
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+/* Estilo para os cards de seção */
+.card{
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Borda leve para definição */
+
+}
+
+h2, h3{
+
+    color: #333333; /* Títulos em cinza escuro */
+    border-bottom: 2px solid #dddddd; /* Linha de separaçõa em cinza claro */
+    padding-bottom: 10px;
+    margin-top: 0;
+
+}
+
+/* Estilo para campos de input */
+.input-group{
+
+    margin-bottom: 15px;
+
+}
+
+.input-group label{
+
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999; /* Borda do input em cinza médio */
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+/* Estilo para a tabela de itens */
+#tabela-itens{
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+#tabela-itens th,
+#tabela-itens td{
+
+    border: 1px solid #cccccc; /* Borda da tabela em cinza claro */
+    padding: 10px;
+
+}
+
+#tabela-itens th{
+
+    background-color: #eeeeee; /* Fundo do cabeçalho da tabela em cinza muito claro */
+    color: #444444;
+
+}
+
+/* Estilo para a área de adicionar item */
+.adicionar-item{
+
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr auto;
+    gap: 10px;
+    margin-top: 15px;
+
+}
+
+.adicionar-item input{
+
+    margin: 0;
+
+}
+
+/* Estilo para botões - Todos em tons de cinza ou preto */
+button{
+
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    color: white; /* Texto do botão sempre branco */
+
+}
+
+#btn-adicionar{
+
+    background-color: #555555; /* Cinza escuro para Adicionar */
+
+}
+
+#btn-adicionar:hover{
+
+    background-color: #333333;
+
+}
+
+.acoes{
+
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais para os selects */
+    gap: 10px;
+
+}
+
+/* Estilo específico para o SELECT, garantindo o mesmo padding e borda dos inputs */
+.acoes, .input-group{
+
+    margin-bottom: 0; /* Remove margem inferior para melhor espaçamento na div acoes */
+
+}
+
+/* Estilo ao focar no select, seguindo o padrão dos inputs */
+select:focus{
+
+    border-color: #111111; /* Borda preta ao focar */
+    outline: none;
+
+}
+
+/* Estilo para o botão de remover item */
+.remover-item{
+
+    background-color: #aaaaaa; /* Cinza claro para remover */
+    color: #333;
+
+}
+
+.remover-item:hover{
+
+    background-color: #888888;
+
+}
+
+/* Estilo para o total geral - Usamos preto para destaque, mantendo o esquema */
+#total-geral{
+
+    color: black;
+    font-size: 1.5em;
+
+}
